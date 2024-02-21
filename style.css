@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding: 0;
+}
+@media screen and (min-width: 430px) {
+    main{
+        background-color: lightgrey;
+        width: 430px;
+        height: 932px;
+    }
+    #box {
+        width: 66px;
+        height: 96px;
+        border-radius: 13px;
+        margin: auto 0;
+        border: black solid 4px;
+        background-color: grey;
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+    }
+   #box #circle1 {
+        width: 28px;
+        height: 28px;
+        /*background-color: ;*/
+        pointer-events: none;
+        border-radius: 50%;
+        border: solid black 1px;
+        left: 18px;
+        top: 13px;
+       bottom: 57px;
+        position: absolute;
+    }
+    #box #circle2 {
+        width: 20px;
+        height: 20px;
+        background-color: grey;
+        pointer-events: none;
+        border-radius: 50%;
+        border: solid black 1px;
+        left: 22px;
+        top: 17px;
+        position: absolute;
+    }
+    #box #circle3 {
+        width: 36px;
+        height: 36px;
+        background-color: lightseagreen;
+        pointer-events: none;
+        border-radius: 50%;
+        border: solid black 2px;
+        left: 13px;
+        top: 50px;
+        position: absolute;
+    }
+
+    #box #circle4 {
+        width: 24px;
+        height: 24px;
+        background-color: grey;
+        pointer-events: none;
+        border-radius: 50%;
+        border: solid black 2px;
+        left: 19px;
+        top: 56px;
+        position: absolute;
+    }
+    .hide {
+        display: none;
+    }
+    #circle5 {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        pointer-events: none;
+        border-radius: 50%;
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #circle5 p {
+        font-weight: bolder;
+        font-size: x-large;
+        font-family: "Roboto Slab";
+    }
+    #circle6 {
+        width: 100px;
+        height: 100px;
+        background-color: indianred;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+    input[type="range"] {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: calc(50% - 50px);
+        top: calc(50% + 1px);
+        transform: translateY(-50%);
+    }
+    #slider {
+        opacity: 20;
+    }
+
+}
+
+
+

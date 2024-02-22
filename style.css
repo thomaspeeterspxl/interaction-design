@@ -112,7 +112,30 @@
     #slider {
         opacity: 20;
     }
-
+#line-1{
+    left: 90px;
+    bottom: 2px;
+    position: absolute;
+}
+    #line-3{
+        left: 95px;
+        bottom: 20px;
+        position: absolute;
+    }
+    #line-2{
+        left: 103px;
+        bottom: 35px;
+        position: absolute;
+    }
+    .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+        left: 50px;
+        position: absolute;
+    }
 }
 
 

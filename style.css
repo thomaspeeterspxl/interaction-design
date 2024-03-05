@@ -1,8 +1,9 @@
-*{
+@media screen and (min-width: 430px) {
+    *{
     margin:0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
-@media screen and (min-width: 430px) {
     main{
         background-color: lightgrey;
         width: 430px;
@@ -22,7 +23,6 @@
    #box #circle1 {
         width: 28px;
         height: 28px;
-        /*background-color: ;*/
         pointer-events: none;
         border-radius: 50%;
         border: solid black 1px;
@@ -85,11 +85,6 @@
         align-items: center;
     }
 
-    #circle5 p {
-        font-weight: bolder;
-        font-size: x-large;
-        font-family: "Roboto Slab";
-    }
     #circle6 {
         width: 100px;
         height: 100px;
@@ -97,9 +92,13 @@
         border-radius: 50%;
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 55%;
         transform: translate(-50%, -50%);
         cursor: pointer;
+    }
+    #circle5 p {
+        font-weight: bolder;
+        font-size: x-large;
     }
     input[type="range"] {
         width: 200px;
@@ -110,7 +109,7 @@
         transform: translateY(-50%);
     }
     #slider {
-        opacity: 20;
+        opacity: 0;
     }
 #line-1{
     left: 90px;
@@ -136,7 +135,103 @@
         left: 50px;
         position: absolute;
     }
+
+    #player02 .controls {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .player {
+        background-color: #2a7b98;
+        padding: 20px;
+        border-radius: 15px;
+        width: 350px;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+    }
+
+    .player img {
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+
+    .info {
+        color: #E1E1E6;
+    }
+
+    .info p {
+        opacity: 0.68;
+        font-size: 19px;
+    }
+
+    .info-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .player h1 {
+        font-size: 27px;
+        color: #E1E1E6;
+        padding-bottom: 7px;
+    }
+
+
+    .controls {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+
+    .track {
+        padding-top: 28px;
+        position: relative;
+
+    }
+
+    .track::before {
+        content: '';
+        height: 6px;
+        width: 100%;
+        display: block;
+        background: #D9D9D9;
+        opacity: 0.3;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    .track::after {
+        content: '';
+        height: 6px;
+        width: 85%;
+        display: block;
+        background: #D9D9D9;
+        border-radius: 10px;
+
+
+    }
+
+    .time {
+        opacity: 0.7;
+        font-size: 14px;
+        color: gainsboro;
+
+        display: flex;
+        justify-content: space-between;
+        padding-top: 9px;
+    }
+
 }
+
+
+
+
+
+
 
 
 

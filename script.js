@@ -74,3 +74,5 @@ function toggleVolume() {
     var volumeSection = document.querySelector('.volume');
     volumeSection.classList.toggle('hide');
 }
+
+
